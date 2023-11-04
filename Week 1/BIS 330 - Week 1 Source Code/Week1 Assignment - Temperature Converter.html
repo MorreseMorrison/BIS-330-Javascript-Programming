@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Name: Morrese Morrison-->
+    <!--College: Peirce University-->
+    <!--Class: BIS 330 - Javascript Programming-->
+    <!--Professor: Michael Chu-->
+    <!--Date & Time Completed: 11/4/2023 at 9:17AM-->
+    <!-- Program Description: This Javascript Program Converts A Fahrenheit Temperature To
+    A Celcius Temperature. The User Enters The Fahrenheit Temperature And It Is Logically
+    Converted To A Celcius Temperature-->
+    <meta charset="UTF-8">	
+    <title>Convert From Fahrenheit to Centigrade</title>
+    <script>
+
+        //**SCRIPT START//
+
+        //(Script Block - 1)
+        //Prompt to Receive Fahrenheit Temperature From The User, Storing That
+        //Value In Variable "InputFahrenheit"
+        var FahrenheitInput = prompt("Please Enter Fahrenheit Temperature");
+        FahrenheitInput = parseInt(FahrenheitInput);
+
+
+        //(Script Block -2)
+        //Logic To Convert The Entered Fahrenheit Temperature To Celcius
+        //Logic As Follows, Fahrenheit Is Subtracted By 32 Feeding Into The "DisplayFahrenheit" variable
+        var DisplayFahrenheit = FahrenheitInput - 32 
+
+        //Logic As Follows, Fahrenheit Is Multiplied By 5 Feeding Into The "DisplayFahrenheit" variable
+        var DisplayFahrenheit = DisplayFahrenheit * 5
+
+        //Logic As Follows, Fahrenheit Is Divided By 9, Then Assigned To Variable "DisplayCelcius"
+        var DisplayCelcius = DisplayFahrenheit / 9
+       
+        
+        //(Script Block -3)
+        //Alert Displaying The Converted Temperature as Well As The Entered Temperature, Utilizing The .toFixed Method To Only Calculate to 2 Decimal Places.
+        alert("The Fahrenheit Temperature is " + FahrenheitInput.toFixed(2) +
+
+              "\n \n The Celcius Temperature is " + DisplayCelcius.toFixed(2));
+
+        //**END**//
+       
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Thanks You For Using The National Weather Service Temperature Converter</h1>
+    </main>
+</body>
+</html>
